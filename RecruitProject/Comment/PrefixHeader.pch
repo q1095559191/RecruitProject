@@ -1,0 +1,56 @@
+//
+//  PrefixHeader.pch
+//  RenovationProject
+//
+//  Created by admin on 15/7/9.
+//  Copyright (c) 2015年 sliu. All rights reserved.
+//
+
+#ifndef RenovationProject_PrefixHeader_pch
+#define RenovationProject_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __OBJC__
+#import "BaseDefine.h"
+#import "Comment.h"
+#import "MJRefresh.h"
+#import "MJExtension.h"
+#import "SVProgressHUD.h"
+#import "AFNetworking.h"
+#import "UIKit+AFNetworking.h"
+#import "LSFactory.h"         //工具类
+#import "SVProgressHUD.h"
+#import "KeyboardManager.h"
+#import "checkBox.h"
+#import "LSBaseVC.h"
+#import <BlocksKit+UIKit.h>
+#import <FBKVOController.h>
+
+#import "AppDelegate.h"
+ //开启滑动返回
+#import <UINavigationController+FDFullscreenPopGesture.h>
+
+#import "LSHttpKit.h"
+#import "LSCheckView.h"
+#import "LSTimePickerView.h"
+
+#import "Check.h"
+#import "AppDelegate.h"
+#import "LSBaseTextView.h"
+#import "LSBaseModel.h"
+#import "LSChoiceView.h"
+#import "MF_Base64Additions.h"
+
+#ifndef __OPTIMIZE__
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...) {}
+#endif
+#endif
+
+#endif
+
+
+
